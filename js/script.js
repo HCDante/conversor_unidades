@@ -21,7 +21,6 @@ function validar() {
 }
 
 function validateInput(){
-  //alert("aaaaaaaaaaaaaa")
   if (!document.getElementById('valor').value){
     document.getElementById('errorNoValue').style.display = 'block';
   } else {

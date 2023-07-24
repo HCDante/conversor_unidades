@@ -90,12 +90,12 @@
 
         <div class="form-group my-4">
           <label for="valor">Valor:</label>
-          <input type="number" id="valor" class="form-control" onblur="validateInput()" placeholder="Por favor ingrese el valor">
+          <input type="number" id="valor" class="form-control mb-1" onblur="validateInput()" placeholder="Por favor ingrese el valor">
+          <div class="alert alert-danger sm" role="alert" id="errorNoValue">
+            Debe ingresar un dato numérico
+          </div>
         </div>
 
-        <div class="alert alert-danger" role="alert" id="errorNoValue">
-          Debe ingresar un dato numérico
-        </div>
 
         <div class="form-group">
           <label for="unidadOne">Unidad a convertir:</label>
