@@ -53,23 +53,6 @@
         <ul>
           <li><a class="nav-link scrollto " href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">Acerca de nosotros</a></li>
-          <li class="dropdown"><a href="#"><span>Menú desplegable</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Menú desplegable</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
           <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -97,11 +80,11 @@
     <section class="inner-page">
       <div class="container">
         <!-- Clase bootstrap para margenes verticales -->
-        <h4 class="my-4">Eliga el tipo de conversión</h4>
+        <h4 class="my-4">¡Bienvenid@ a nuestro conversor de unidades! Elige el tipo de conversión que deseas realizar</h4>
         <!-- Clase bootstrap para formularios -->
         <div class="form-group">
-          <label for="inputUnits">Unidad a convertir:</label>
-          <select id="inputUnits" class="form-control">
+          <label for="unidadOne">Unidad a convertir:</label>
+          <select name="unidadOne" id="unidadOne" class="form-control">
             <option value="mm">Milímetros</option>
             <option value="cm">Centímetros</option>
             <option value="m">Metros</option>
@@ -112,13 +95,13 @@
             <option value="mi">Millas</option>
           </select>
         </div>
-        <div class="form-group">
-          <label for="inputValue">Valor:</label>
-          <input type="number" id="inputValue" class="form-control" placeholder="Por favor ingrese el valor">
+        <div class="form-group my-4">
+          <label for="valor">Valor:</label>
+          <input type="number" id="valor" class="form-control" placeholder="Por favor ingrese el valor">
         </div>
         <div class="form-group">
-          <label for="outputUnits">Unidad de salida:</label>
-          <select id="outputUnits" class="form-control">
+          <label for="unidadTwo">Unidad de salida:</label>
+          <select name="unidadTwo" id="unidadTwo" class="form-control">
             <option value="mm">Milímetros</option>
             <option value="cm">Centímetros</option>
             <option value="m">Metros</option>
@@ -129,10 +112,15 @@
             <option value="mi">Millas</option>
           </select>
         </div>
-        <button class="btn btn-primary my-4" onclick="convert()">Convertir</button>
-        <div id="result">Aquí va el resultado</div>
+        <button class="btn btn-primary my-4" onclick="validar()">Convertir</button>
+        <div id="resultado"></div>
       </div>
     </section>
+
+    <div class="container text-center  my-4">
+      <h2>Descripción</h2>
+      <p>Conversor Pro te ofrece una calculadora de conversión de unidades online para todos los tipos de unidades de medida. Puedes encontrar tablas de conversión de unidades métricas del Sistema Internacional, así como unidades del sistema americano. Sólo tiene que seleccionar que tipo de unidades desea convertir.</p>
+    </div>
 
   </main><!-- End #main -->
 
