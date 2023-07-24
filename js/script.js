@@ -17,5 +17,18 @@ function validar() {
   const resultado = valor * conversion[unidadOne] / conversion[unidadTwo];
   
   document.getElementById("resultado").innerHTML = `Tu resultado es: ${resultado.toFixed(2)} ${unidadTwo}`
+}
+
+function validateInput(){
+
+  if (!document.getElementById('valor').value){
+
+    document.getElementById('errorNoValue').style.display = 'block';
+
+  } else {
+
+    document.getElementById('errorNoValue').style.display = 'none';
+
+  }
 
 }

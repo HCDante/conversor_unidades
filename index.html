@@ -1,42 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Conversor de unidades Pro</title>
-  <meta content="" name="description">
+  <title>Conversor de Unidades Pro</title>
+  <meta content="" name="description">s
   <meta content="" name="keywords">
-
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
   <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
-
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: OnePage
-  * Updated: May 30 2023 with Bootstrap v5.3.0
-  * Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -44,11 +28,9 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-
-      <h1 class="logo"><a href="index.html">Conversor de unidades Pro</a></h1>
+      <h1 class="logo"><a href="index.html">Conversor de Unidades Pro</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto " href="#hero">Home</a></li>
@@ -57,7 +39,6 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-
     </div>
   </header><!-- End Header -->
 
@@ -73,15 +54,21 @@
             <li>Inglés</li>
           </ol>
         </div>
-
       </div>
     </section><!-- End Breadcrumbs -->
-
+    <!-- Conversor -->
     <section class="inner-page">
       <div class="container">
         <!-- Clase bootstrap para margenes verticales -->
         <h4 class="my-4">¡Bienvenid@ a nuestro conversor de unidades! Elige el tipo de conversión que deseas realizar</h4>
         <!-- Clase bootstrap para formularios -->
+        <div class="form-group my-4">
+          <label for="valor">Valor:</label>
+          <input type="number" id="valor" class="form-control mb-1" onblur="validateInput()" placeholder="Por favor ingrese el valor">
+          <div class="alert alert-danger sm" role="alert" id="errorNoValue">
+            Debe ingresar un dato numérico
+          </div>
+        </div>
         <div class="form-group">
           <label for="unidadOne">Unidad a convertir:</label>
           <select name="unidadOne" id="unidadOne" class="form-control">
@@ -94,10 +81,6 @@
             <option value="yd">Yardas</option>
             <option value="mi">Millas</option>
           </select>
-        </div>
-        <div class="form-group my-4">
-          <label for="valor">Valor:</label>
-          <input type="number" id="valor" class="form-control" placeholder="Por favor ingrese el valor">
         </div>
         <div class="form-group">
           <label for="unidadTwo">Unidad de salida:</label>
@@ -119,20 +102,18 @@
 
     <div class="container text-center  my-4">
       <h2>Descripción</h2>
-      <p>Conversor Pro te ofrece una calculadora de conversión de unidades online para todos los tipos de unidades de medida. Puedes encontrar tablas de conversión de unidades métricas del Sistema Internacional, así como unidades del sistema americano. Sólo tiene que seleccionar que tipo de unidades desea convertir.</p>
+      <p>Conversor de Unidades Pro te ofrece una calculadora de conversión de unidades online para todos los tipos de unidades de medida. Puedes encontrar tablas de conversión de unidades métricas del Sistema Internacional, así como unidades del sistema americano. Sólo tiene que seleccionar que tipo de unidades desea convertir.</p>
     </div>
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-
     <div class="footer-top">
       <div class="container">
         <div class="row">
-
           <div class="col-lg-6 col-md-6 footer-contact">
-            <h3>Conversor de unidades Pro</h3>
+            <h4>Conversor de Unidades Pro</h4>
             <p>
               A108 Adam Street <br>
               New York, NY 535022<br>
@@ -141,7 +122,6 @@
               <strong>Email:</strong> info@example.com<br>
             </p>
           </div>
-
           <div class="col-lg-6 col-md-6 footer-links">
             <h4>Links</h4>
             <ul>
@@ -151,20 +131,14 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
           </div>
-
-
-
         </div>
       </div>
     </div>
-
     <div class="container d-md-flex py-4">
-
       <div class="me-md-auto text-center text-md-start">
         <div class="copyright">
           &copy; Copyright <strong><span>Conversor de unidades</span></strong>. Todos los derechos reservados
         </div>
-
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -178,18 +152,10 @@
       class="bi bi-arrow-up-short"></i></a>
 
   <script src="./js/script.js"></script>
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
