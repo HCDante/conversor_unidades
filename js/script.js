@@ -10,7 +10,7 @@ function validar() {
       ft: 30.48,
       m: 100,
       yd: 91.44,
-      km: 1000,
+      km: 100000,
       mi: 160934
   };
 
@@ -18,4 +18,13 @@ function validar() {
   
   document.getElementById("resultado").innerHTML = `Tu resultado es: ${resultado.toFixed(2)} ${unidadTwo}`
 
+}
+
+function validateInput(){
+  //alert("aaaaaaaaaaaaaa")
+  if (!document.getElementById('valor').value){
+    document.getElementById('errorNoValue').style.display = 'block';
+  } else {
+    document.getElementById('errorNoValue').style.display = 'none';
+  }
 }

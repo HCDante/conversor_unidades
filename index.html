@@ -37,6 +37,10 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+
+    <link rel="stylesheet" href="./css/index.css">
+
 </head>
 
 <body>
@@ -82,9 +86,21 @@
         <!-- Clase bootstrap para margenes verticales -->
         <h4 class="my-4">¡Bienvenid@ a nuestro conversor de unidades! Elige el tipo de conversión que deseas realizar</h4>
         <!-- Clase bootstrap para formularios -->
+
+
+        <div class="form-group my-4">
+          <label for="valor">Valor:</label>
+          <input type="number" id="valor" class="form-control" onblur="validateInput()" placeholder="Por favor ingrese el valor">
+        </div>
+
+        <div class="alert alert-danger" role="alert" id="errorNoValue">
+          Debe ingresar un dato numérico
+        </div>
+
         <div class="form-group">
           <label for="unidadOne">Unidad a convertir:</label>
           <select name="unidadOne" id="unidadOne" class="form-control">
+            <option value="">Seleccione una opción</option>
             <option value="mm">Milímetros</option>
             <option value="cm">Centímetros</option>
             <option value="m">Metros</option>
@@ -95,13 +111,10 @@
             <option value="mi">Millas</option>
           </select>
         </div>
-        <div class="form-group my-4">
-          <label for="valor">Valor:</label>
-          <input type="number" id="valor" class="form-control" placeholder="Por favor ingrese el valor">
-        </div>
         <div class="form-group">
           <label for="unidadTwo">Unidad de salida:</label>
           <select name="unidadTwo" id="unidadTwo" class="form-control">
+            <option value="">Seleccione una opción</option>
             <option value="mm">Milímetros</option>
             <option value="cm">Centímetros</option>
             <option value="m">Metros</option>
