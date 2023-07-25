@@ -3,14 +3,11 @@ function validar() {
   const unidadOne = document.getElementById("unidadOne").value;
   const unidadTwo = document.getElementById("unidadTwo").value;
 
-  if (unidadOne === unidadTwo) {
+  if (unidadOne === unidadTwo || (unidadOne == 'N' || unidadTwo == 'N')) {
     document.getElementById("resultado").innerHTML = '';
       document.getElementById("resultado").innerHTML = `
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
           <strong>Error:</strong> Debes seleccionar dos unidades diferentes para la conversión.
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
         </div>
       `;
     return;
