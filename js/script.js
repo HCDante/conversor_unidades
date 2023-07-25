@@ -3,20 +3,25 @@ function validar() {
   const unidadOne = document.getElementById("unidadOne").value;
   const unidadTwo = document.getElementById("unidadTwo").value;
 
+  if (unidadOne === unidadTwo) {
+    alert("Lo siento, debes seleccionar dos unidades diferentes para la conversión");
+    return;
+  }
+
   const conversion = {
-      mm: 0.1,
-      cm: 1,
-      in: 2.54,
-      ft: 30.48,
-      m: 100,
-      yd: 91.44,
-      km: 1000,
-      mi: 160934
+    mm: 0.1,
+    cm: 1,
+    in: 2.54,
+    ft: 30.48,
+    m: 100,
+    yd: 91.44,
+    km: 1000,
+    mi: 160934,
   };
 
-  const resultado = valor * conversion[unidadOne] / conversion[unidadTwo];
-  
-  document.getElementById("resultado").innerHTML = `Tu resultado es: ${resultado.toFixed(2)} ${unidadTwo}`
+  let resultado = valor * conversion[unidadOne] / conversion[unidadTwo];
+
+  document.getElementById("resultado").innerHTML = `Tu resultado es: ${resultado.toFixed(2)} ${unidadTwo}`;
 }
 
 function validateInput(){
